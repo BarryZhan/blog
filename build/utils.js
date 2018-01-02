@@ -53,7 +53,6 @@ exports.cssLoaders = function (options) {
       return ['vue-style-loader'].concat(loaders)
     }
   }
-
   // https://vue-loader.vuejs.org/en/configurations/extract-css.html
   return {
     css: generateLoaders(),
@@ -64,8 +63,7 @@ exports.cssLoaders = function (options) {
       {
         loader: 'sass-resources-loader',
         options: {
-          // resources: path.resolve(__dirname, '../src/assets/style/common/reset.scss')
-          resources: path.resolve(__dirname, '../src/styles/helper/mixin.scss')
+          resources: path.resolve(__dirname, '../src/assets/scss/mixins/index.scss')
         }
       }
     ),

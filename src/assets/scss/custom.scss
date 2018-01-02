@@ -11,7 +11,7 @@ $error-color: #ed3f14;
 $link-color: $primary-color;
 $link-hover-color: mix(white, $link-color, 20%);
 $link-active-color: mix(black, $link-color, 5%);
-$selected-color: opacify($primary-color, 90%);
+$selected-color: opacify($primary-color, .9);
 $tooltip-color: #fff;
 $subsidiary-color: #80848f;
 $rate-star-color: #f5a623;
@@ -36,7 +36,7 @@ $border-color-split: #e9eaec; // inside
 
 // Background color
 $background-color-base: #f7f7f7; // base
-$background-color-select-hover: $input-disabled-bg;
+//$background-color-select-hover: $input-disabled-bg;
 $tooltip-bg: rgba(70, 76, 91, .9);
 $head-bg: #f9fafc;
 $table-thead-bg: #f8f8f9;
@@ -51,7 +51,7 @@ $date-picker-cell-hover-bg: #e1f0fe;
 
 // Shadow
 $shadow-color: rgba(0, 0, 0, .2);
-$shadow-base: $shadow-down;
+//$shadow-base: $shadow-down;
 $shadow-card: 0 1px 1px 0 rgba(0, 0, 0, .1);
 $shadow-up: 0 -1px 6px $shadow-color;
 $shadow-down: 0 1px 6px $shadow-color;
