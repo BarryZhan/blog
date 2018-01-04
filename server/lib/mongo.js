@@ -1,12 +1,13 @@
 const mongoose = require('mongoose')
 
+const config = require('../config')
+
 module.exports = function () {
-  const uri = 'mongodb://localhost:27017/blog'
-  mongoose.connect(uri)
+  mongoose.connect(config.mongodb)
 
   // MongoDB连接成功后回调，这里仅输出一行日志
   mongoose.connection.on('connected', function () {
-    console.log('Mongoose default connection open to ' + uri)
+    console.log('Mongoose default connection open to ' + config.mongodb)
   })
 
   // MongoDB连接出错后回调，这里仅输出一行日志

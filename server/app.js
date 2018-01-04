@@ -3,6 +3,7 @@ const Koa = require('koa')
 const route = require('koa-route')
 
 const mongo = require('./lib/mongo')
+const config = require('./config')
 
 const Article = require('./models/article')
 
@@ -62,5 +63,5 @@ app.use(route.get('/addArticle', addArticle))
 app.use(route.get('/about', about))
 app.use(route.get('/redirect', redirect))
 
-app.listen(3000)
+app.listen(config.port)
 mongo()
