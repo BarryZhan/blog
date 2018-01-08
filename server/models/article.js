@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+
 const Schema = mongoose.Schema
 
 const Article = new Schema({
@@ -13,6 +14,4 @@ Article.methods.getAll = function (cb) {
   return this.model('Animal').find({type: this.type}, cb)
 }
 
-const model = mongoose.model('Article', Article)
-
-module.exports = model
+module.exports = mongoose.model('Article', Article)
