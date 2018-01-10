@@ -26,4 +26,4 @@ process.on('SIGINT', function () {
   })
 })
 
-exports.Article = require('./article')
+exports.Article = require('./posts')

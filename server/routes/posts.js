@@ -6,7 +6,7 @@ const router = new Router({
 
 router
   .get('/', (ctx, next) => { // GET /posts 所有用户或者特定用户的文章页
-    ctx.body = '主页'
+    ctx.body = ctx
   })
   .post('/create', (ctx, next) => { // POST /posts/create 发表一篇文章
     ctx.body = '发布文章'

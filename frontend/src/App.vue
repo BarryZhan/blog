@@ -1,23 +1,40 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <header class="header">
+      <a href="/" class="header-logo">
+        <img src="https://barry.pw/favicon.png" alt="logo">
+      </a>
+      <nav class="site-nav">
+        <ul class="menu">
+          <li class="menu-item">
+            <router-link to="/" class="menu-link">blog</router-link>
+          </li>
+          <li class="menu-item">
+            <router-link to="/" class="menu-link">tag</router-link>
+          </li>
+          <li class="menu-item">
+            <router-link to="/" class="menu-link">archives</router-link>
+          </li>
+          <li class="menu-item">
+            <a href="https://github.com/BarryZhan" class="menu-link" target="_blank">github</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <router-view/>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  import sliderBar from './components/slider-bar/slider-bar.vue'
+
+  export default {
+    name: 'app',
+    components: {
+      sliderBar
+    }
+  }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
